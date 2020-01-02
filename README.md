@@ -10,8 +10,24 @@
 ```bash
 $ scraper.py <port> A-C
 ``` 
-le resultats et touts les mots du vidal commencant par A B ou C
+le resultat et tous les mots du vidal commencant par la lettre choisie
+Génère la première version de susbt.dic
+
+## enrichir.py 
+Permet d'enrechir le subst.dic à partir de corpus-med (ajoute les medicaments qui ne se trouvent pas dans Vidal) .
+Il génère: subst.dic (version enrichie), subt_enri.dic (contient que les medicaments extraits de corpus-med.txt) et infos2.txt ( informations sur le nombre de medicaments trouvés).
 
 ## unitex.py 
  script qui appelle unitex. 
-Pour pouvoir unitliser UnitexToolLogger, il faut copier Unitex-GramLab\App UnitexToolLogger.exe dans Unitex-GramLab\French
+Pour pouvoir unitliser UnitexToolLogger, il faut copier Unitex-GramLab\App>UnitexToolLogger.exe dans Unitex-GramLab\French>
+OU BIEN : 
+placer les trois scripts python (aspirer.py, enrichir.py et unitex.py) dans C:\................\Unitex-GramLab\App>
+(là où se trouve UnitexToolLogger.exe)
+
+## posologie.grf 
+ graphe unitex qui extrait les posologiesde de traitement à partir du fichier texte corpus-medical.
+
+
+RESULTATS OBTENUS:
+
+
